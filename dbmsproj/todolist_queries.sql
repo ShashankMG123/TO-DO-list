@@ -60,3 +60,35 @@ from department,(
     ) as x
 ) as y
 where did = '8';
+
+/* view all tasks of a particular student*/
+select agenda,tagid,tano
+from ongoing_tasks
+where tasrn='120170002';
+
+/* all ongoing tasks for a particular teacher*/
+select agenda,tagid,tano
+from ongoing_tasks as o,(
+                    select gid
+                    from groups
+                    where tname='Balaji'
+                    group by gid,tname
+                ) as x
+where o.tagid = x.gid
+group by agenda,tagid,tano;
+
+
+/* number of projects under a department*/
+select agenda,tagid,tano
+from ongoing_tasks as o,(
+                    select gid
+                    from groups
+                    where tname in (
+                        select tname 
+                        from teachers,department
+                        where tdid=did and dname='Web Development'
+                    )
+                    group by gid,tname
+                ) as x
+where o.tagid = x.gid
+group by agenda,tagid,tano;

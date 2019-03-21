@@ -98,3 +98,4 @@ SELECT * from department;
 SELECT * from student;
 SELECT * from teachers;
 SELECT * from groups;
+select * from ongoing_tasks;
