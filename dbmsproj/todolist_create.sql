@@ -52,7 +52,7 @@ CREATE TABLE 	ongoing_tasks
     TaNo INT NOT NULL,
     TaGid INT NOT NULL,
     TaSRN CHAR(9) NOT NULL,
-    PRIMARY KEY (TaGid,TaSRN,TaNo),
+    PRIMARY KEY (TaNo,TaGid,TaSRN),
     FOREIGN KEY (TaGid,TaSRN) REFERENCES groups(Gid, SRN)
 );
 
@@ -63,8 +63,6 @@ CREATE TABLE 	finished_tasks
     FTaNo INT NOT NULL,
     FGid INT NOT NULL,
     FSRN CHAR(9) NOT NULL,
-    FOREIGN KEY (FGid,FSRN) REFERENCES groups (Gid,SRN),
-    PRIMARY KEY (FGid,FSRN,FTaNo)
+    FOREIGN KEY  (FGid,FSRN) REFERENCES groups (Gid, SRN),
+    PRIMARY KEY (FTaNo,FGid,FSRN)
 );
-
-

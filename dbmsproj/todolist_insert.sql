@@ -56,6 +56,42 @@ INSERT INTO groups VALUES ('2018-12-10 19:00:00-00', 3, 8, 120170002, 'Prakash')
 INSERT INTO groups VALUES ('2018-12-10 19:00:00-00', 3, 8, 120170003, 'Prakash');
 
 
+INSERT INTO ongoing_tasks VALUES('Create javascript quiz game that takes multiple answers and shows a result to the user', 1, 1, 120170003);
+INSERT INTO ongoing_tasks VALUES('Create javascript quiz game that takes multiple answers and shows a result to the user', 1, 1, 120170001);
+INSERT INTO ongoing_tasks VALUES('Create javascript quiz game that takes multiple answers and shows a result to the user', 1, 1, 120170005);
+
+INSERT INTO ongoing_tasks VALUES('Recognition of handwritten english words', 2, 2, 120170002);
+INSERT INTO ongoing_tasks VALUES('Recognition of handwritten english words', 2, 2, 120170006);
+INSERT INTO ongoing_tasks VALUES('Recognition of handwritten english words', 2, 2, 120170008);
+INSERT INTO ongoing_tasks VALUES('Recognition of handwritten english words', 2, 2, 120170012);
+INSERT INTO ongoing_tasks VALUES('Recognition of handwritten english words', 2, 2, 120170015);
+
+INSERT INTO ongoing_tasks VALUES('Online shopping website', 3, 3, 120170008);
+INSERT INTO ongoing_tasks VALUES('Online shopping website', 3, 3, 120170011);
+INSERT INTO ongoing_tasks VALUES('Online shopping website', 3, 3, 120170004);
+INSERT INTO ongoing_tasks VALUES('Online shopping website', 3, 3, 120170009);
+
+INSERT INTO ongoing_tasks VALUES('Secure text transfer based on cloud', 4, 4, 120170007);
+INSERT INTO ongoing_tasks VALUES('Secure text transfer based on cloud', 4, 4, 120170010);
+
+INSERT INTO ongoing_tasks VALUES('Facial Recognition', 5, 5, 120170013);
+
+INSERT INTO ongoing_tasks VALUES('University campus online automation', 6, 6, 120170012);
+INSERT INTO ongoing_tasks VALUES('University campus online automation', 6, 6, 120170014);
+
+INSERT INTO ongoing_tasks VALUES('Android offloading computation', 7, 7, 120170001);
+
+INSERT INTO ongoing_tasks VALUES('Creating landscapes using GAN', 8, 8, 120170002);
+INSERT INTO ongoing_tasks VALUES('Creating landscapes using GAN', 8, 8, 120170003);
+
+
+
+/*
+INSERT INTO Finished_tasks VALUES('2019-01-03 19:00:00-00','Hotel booking website', 9, 3, 120170008);
+INSERT INTO Finished_tasks VALUES('2019-01-03 19:00:00-00','Hotel booking website', 9, 3, 120170011);
+INSERT INTO Finished_tasks VALUES('2019-01-03 19:00:00-00','Hotel booking website', 9, 3, 120170004);
+INSERT INTO Finished_tasks VALUES('2019-01-03 19:00:00-00','Hotel booking website', 9, 3, 120170009);
+*/
 
 
 
