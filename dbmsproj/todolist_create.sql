@@ -52,17 +52,19 @@ CREATE TABLE 	ongoing_tasks
     TaNo INT NOT NULL,
     TaGid INT NOT NULL,
     TaSRN CHAR(9) NOT NULL,
-    PRIMARY KEY (TaNo),
+    PRIMARY KEY (TaGid,TaSRN,TaNo),
     FOREIGN KEY (TaGid,TaSRN) REFERENCES groups(Gid, SRN)
 );
 
 CREATE TABLE 	finished_tasks
 (	
     finishtime TIMESTAMP NOT NULL,
+    FAgenda CHAR(100) NOT NULL,
     FTaNo INT NOT NULL,
     FGid INT NOT NULL,
     FSRN CHAR(9) NOT NULL,
-    FOREIGN KEY (FGid,FSRN) REFERENCES groups(Gid, SRN),
-    FOREIGN KEY  (FTaNo) REFERENCES ongoing_tasks (TaNo),
-    PRIMARY KEY (FTaNo)
+    FOREIGN KEY (FGid,FSRN) REFERENCES groups (Gid,SRN),
+    PRIMARY KEY (FGid,FSRN,FTaNo)
 );
+
+

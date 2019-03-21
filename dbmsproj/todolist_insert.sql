@@ -1,4 +1,3 @@
-
 INSERT INTO department VALUES (8, 'Machine Learning');
 INSERT INTO department VALUES (9, 'Cloud Computing');
 INSERT INTO department VALUES (5, 'Web Development');
@@ -58,7 +57,10 @@ INSERT INTO groups VALUES ('2018-12-10 19:00:00-00', 3, 8, 120170003, 'Prakash')
 
 
 
+
+
 SELECT * from department;
 SELECT * from student;
 SELECT * from teachers;
 SELECT * from groups;
+select * from ongoing_tasks;

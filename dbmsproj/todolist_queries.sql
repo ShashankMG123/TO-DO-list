@@ -1,16 +1,10 @@
-/*
-SELECT * from department;
-SELECT * from student;
-SELECT * from teachers;
-SELECT * from groups;
-*/
 
 /* selects groups that a student is a part of*/
 SELECT GID,joindate
 from student as s, groups as g
 where s.srn = g.srn and sname = 'Abhaay';
 
-/* select groups that a teacher controlls and the number of students in that group*/
+/* select groups that a teacher controls and the number of students in that group*/
 select g.gid, count(*) as number_of_students
 from    groups as g
 group by g.tname,g.gid
@@ -26,7 +20,7 @@ where  t.tname != 'Prakash' and d.did = t.tdid and d.did in
     where tname = 'Prakash'
 );
 
-/* view all student in your department (as teacher)*/
+/* view all students in your department (as teacher)*/
 select sname, dname
 from department as d, student as s
 where  s.sdid = d.did and d.did in 
@@ -60,3 +54,6 @@ from department,(
     ) as x
 ) as y
 where did = '8';
+
+
+/* 
